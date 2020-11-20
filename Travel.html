@@ -1,0 +1,150 @@
+<html>
+    <title>Travel-Diary</title>
+    <style>
+        h1{
+            color:orange;
+            text-align: center;
+            font-size: 1.25cm;
+            padding:50px
+            
+        }
+        body{
+            background:url(https://unsplash.com/photos/5J1bHRX1fNw/download?force=true);
+        }
+        .image1 img{
+	height: 300px;
+	border: 3px solid white;
+	margin: 90px;
+}
+ 
+			.image1-target{
+			
+				position: fixed;
+				top: -100%;
+				width : 100%;
+				opacity: 0;
+				overflow: hidden;
+				background: rgba(0,0,0,.7);
+				-webkit-transition : opacity .5s ease-in-out;
+				-moz-transition : opacity .5s ease-in-out;
+				-o-transition : opacity .5s ease-in-out;
+				-ms-transition : opacity .5s ease-in-out;
+			
+}
+			
+			.image1-target img{
+			
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin:auto;
+				width: 800px;
+				height: 600px;
+				border: 3px solid white;
+			
+				-webkit-transition : .5s ease-in-out;
+				-moz-transition : .5s ease-in-out;
+				-o-transition : .5s ease-in-out;
+				-ms-transition : .5s ease-in-out;
+			
+			}
+			
+			.image1-close{
+				width:50px;
+				height:50px;
+				background: white;
+				display: block;
+				position: absolute;
+				right: 0;
+				text-decoration: none;
+				-webkit-transition : .5s ease-in-out;
+				-moz-transition : .5s ease-in-out;
+				-o-transition : .5s ease-in-out;
+				-ms-transition : .5s ease-in-out;
+			}
+			
+			.image1-close:before{
+				content: "";
+				display: block;
+				position: absolute;
+				background: black;
+				height: 30px;
+				width: 1px;
+				left:20px;
+				top:10px;
+				transform:rotate(45deg);
+			}
+			
+			.image1-close:after{
+				content: "";
+				display: block;
+				position: absolute;
+				background: black;
+				height: 30px;
+				width: 1px;
+				left:20px;
+				top:10px;
+				transform:rotate(-45deg);
+			}
+			
+			
+			
+			
+			.image1-target:target{
+				opacity: 1;
+				top: 0;
+				bottom: 0;
+			}
+			.plane{
+				height:50px;
+				width:50px;
+			}
+
+    </style>
+    <head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
+		<h1>My Travel Diary<img src="plane.png" class='plane'></h1></head>
+    <body> 
+         
+ 
+	<a class='image1' href="#Eiffel_tower">
+		<img src='https://unsplash.com/photos/UzagqG756OU/download?force=true'/>
+	</a>
+	<div class='image1-target' id='Eiffel_tower'>
+		<img src='https://unsplash.com/photos/UzagqG756OU/download?force=true'/>
+		<a class='image1-close' href="#"></a>
+	</div>
+ 
+	<a class='image1' href="#Mountains">
+		<img src='https://unsplash.com/photos/gdQnsMbhkUs/download?force=true'/>
+	</a>
+	<div class='image1-target' id='Mountains'>
+		<img src='https://unsplash.com/photos/gdQnsMbhkUs/download?force=true'/>
+		<a class='image1-close' href="#"></a>
+	</div>
+ 
+	<a class='image1' href="#Waterfall">
+		<img src='https://unsplash.com/photos/1Ez2-Z-8SKE/download?force=true'/>
+	</a>
+	<div class='image1-target' id='Waterfall'>
+		<img src='https://unsplash.com/photos/1Ez2-Z-8SKE/download?force=true'/>
+		<a class='image1-close' href="#"></a>
+    </div>
+    
+ 
+	<a class='image1' href="#Leaning_tower">
+		<img src='https://unsplash.com/photos/F5HtPjpBb9k/download?force=true'/>
+	</a>
+	<div class='image1-target' id='Leaning_tower'>
+		<img src='https://unsplash.com/photos/F5HtPjpBb9k/download?force=true'/>
+		<a class='image1-close' href="#"></a>
+	</div>
+ 
+
+       
+
+    </body>
+</html>
